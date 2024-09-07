@@ -20,5 +20,8 @@ public class AppInitializer {
         //check the bean component in application context
         SpringBean bean1 = ctx.getBean(SpringBean.class);
         System.out.println(bean1);
+
+        //close the application context(best practice)
+        ctx.close();
     }
 }
