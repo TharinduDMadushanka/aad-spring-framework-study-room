@@ -1,5 +1,6 @@
 package lk.ijse;
 
+import lk.ijse.bean.SpringBean;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class AppInitializer {
@@ -15,5 +16,9 @@ public class AppInitializer {
         //get bean can use for get the object from application context
         AppConfig bean = ctx.getBean(AppConfig.class);
         System.out.println(bean);
+
+        //check the bean component in application context
+        SpringBean bean1 = ctx.getBean(SpringBean.class);
+        System.out.println(bean1);
     }
 }
