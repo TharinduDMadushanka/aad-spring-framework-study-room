@@ -27,12 +27,25 @@ public class AppInitializer {
         ctx.close();
 
         //to find JVM shutdown hook
-        Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
-            @Override
-            public void run() {
-                //close the application context(best practice)
-                ctx.close();
-            }
-        }));
+//        Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                //close the application context(best practice)
+//                ctx.close();
+//            }
+//        }));
+
+
+        //to find JVM shutdown hook
+//        Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                //close the application context(best practice)
+//                ctx.close();
+//            }
+//        }));
+
+        //we can simplify the above code using this method.
+        ctx.registerShutdownHook();
     }
 }
