@@ -11,5 +11,9 @@ public class AppInitializer {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
         ctx.register(AppConfig.class);
         ctx.refresh();
+
+        //get bean can use for get the object from application context
+        AppConfig bean = ctx.getBean(AppConfig.class);
+        System.out.println(bean);
     }
 }
