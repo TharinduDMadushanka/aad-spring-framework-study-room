@@ -15,18 +15,16 @@
     </properties>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>6.1.11</version>
+            <version>4.3.25.RELEASE</version> <!-- Latest 4.x version -->
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <version>3.0.2.RELEASE</version>
+            <version>4.3.25.RELEASE</version>
         </dependency>
 
 
