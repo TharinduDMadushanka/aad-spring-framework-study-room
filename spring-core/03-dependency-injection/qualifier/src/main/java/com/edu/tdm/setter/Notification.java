@@ -17,12 +17,19 @@ public class Notification {
     }
 
     public void sendNotification(String message, String receiver) {
-        System.out.println("NotificationService settor: Sending notification...");
+        System.out.println("NotificationService setter: Sending notification...");
         superEmail.sendEmail(message, receiver);
     }
 
 }
 
+/**
+
+ @Autowired
+ @Qualifier("emailService1")
+ private EmailService emailService;
+
+ */
 
 
 
