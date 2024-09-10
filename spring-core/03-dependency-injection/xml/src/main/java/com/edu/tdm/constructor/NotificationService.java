@@ -10,7 +10,7 @@ public class NotificationService {
     }
 
     public void sendNotification(String message, String receiver) {
-        System.out.println("Sending notification...");
+        System.out.println("Sending notification in constructor injection...");
         emailService.sendEmail(message, receiver);
     }
 
