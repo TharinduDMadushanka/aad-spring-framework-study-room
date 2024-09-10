@@ -1,9 +1,16 @@
 package com.edu.tdm;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 public class Main {
     public static void main(String[] args) {
 
-//        ApplicationContext context =
+        ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+
+        HelloWorld helloWorld = (HelloWorld) context.getBean("helloWorld");
+
+        helloWorld.getMessage();
 
     }
 }
