@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Define Engine bean -->
+    <bean id="engine" class="com.edu.tdm.Engine">
+        <property name="type" value="V8"/>
+    </bean>
+
+    <!-- Define Car bean with Setter Injection -->
+    <bean id="car" class="com.edu.tdm.Car">
+        <property name="engine" ref="engine"/>
+    </bean>
+
+</beans>
+
+<!--<bean>: This defines a bean. Each bean is an instance of a class managed by Spring.-->
+<!--id: The identifier for the bean (e.g., engine).-->
+<!--class: The fully qualified class name of the bean.-->
+<!--<property>: This is used for setter injection. The name attribute refers to the property name in the bean,
+and ref refers to another bean by its ID.-->
