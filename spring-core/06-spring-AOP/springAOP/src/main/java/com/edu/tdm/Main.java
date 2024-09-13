@@ -25,3 +25,15 @@ public class Main {
 
     }
 }
+
+/**
+ * Pointcut Expressions
+ * Spring AOP allows you to define pointcuts using expressions. Some examples:
+
+ * execution(pattern): Used to match method execution join points.
+ * Example: execution(* com.example.service.PaymentService.processPayment(..)) matches any method called processPayment
+   in PaymentService with any parameters.
+
+ * within(type): Limits matching to join points within certain types.
+ * Example: within(com.example.service..*) matches any join point within classes inside the service package.
+ */

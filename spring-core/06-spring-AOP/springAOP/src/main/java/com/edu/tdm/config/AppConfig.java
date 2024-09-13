@@ -9,3 +9,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @EnableAspectJAutoProxy // enable AOP
 public class AppConfig {
 }
+
+/**
+ * @EnableAspectJAutoProxy: Enables support for handling components marked with @Aspect and uses AspectJ-based AOP proxies.
+ */
