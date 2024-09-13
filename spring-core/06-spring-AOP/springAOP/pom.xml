@@ -14,4 +14,31 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <!-- spring-context -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>6.1.11</version>
+        </dependency>
+
+        <!-- spring-aop -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>6.1.11</version>
+        </dependency>
+
+        <!-- aspectj-weaver -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.22</version>
+            <scope>runtime</scope>
+        </dependency>
+
+
+
+    </dependencies>
+
 </project>
