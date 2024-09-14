@@ -67,3 +67,9 @@ public class Employee {
         this.email = email;
     }
 }
+
+/**
+ * @Entity: Specifies that the class is an entity and is mapped to a database table.
+ * @Table: Specifies the name of the table in the database.
+ * @Id and @GeneratedValue: Mark the primary key of the entity.
+ */
