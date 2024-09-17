@@ -23,3 +23,9 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
         return new String[]{"/"};
     }
 }
+/**
+ * Purpose: This class replaces the traditional web.xml file and sets up the Spring DispatcherServlet.
+ * Root Config: Returns the root configuration class (WebRootConfig). It sets up the global application context.
+ * Servlet Config: Returns the servlet configuration class (WebAppConfig), setting up the Spring MVC context.
+ * Servlet Mapping: Maps all requests ("/") to the DispatcherServlet, making it the central entry point for the application.
+ */
