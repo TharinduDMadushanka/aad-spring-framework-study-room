@@ -1,5 +1,7 @@
 package com.edu.tdm;
 
+import com.edu.tdm.api.MyController1;
+import com.edu.tdm.api.MyController2;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.ViewResolver;
@@ -25,6 +27,14 @@ public class WebAppConfig implements WebMvcConfigurer {
         return new InternalResourceViewResolver("/WEB-INF/WEB-INF/pages/",".html");
     }
 
+    @Bean
+    public MyController1 myController1() {
+        return new MyController1();
+    }
 
+    @Bean
+    public MyController2 myController2() {
+        return new MyController2();
+    }
 
 }
