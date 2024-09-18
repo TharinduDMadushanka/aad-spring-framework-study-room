@@ -4,3 +4,8 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 </web-app>
+
+<!--        Purpose: In a traditional Spring application, the web.xml file serves as the deployment descriptor for your web application, -->
+<!--        providing details on how to initialize servlets, filters, listeners, etc.-->
+<!--        Empty in Your Case: Since you're using Java-based configuration (WebAppInitializer), you don’t need to configure anything in-->
+<!--        web.xml. It's just an empty placeholder, as you are leveraging annotations and Java classes for the configuration.-->

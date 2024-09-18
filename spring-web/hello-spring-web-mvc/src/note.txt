@@ -1,0 +1,15 @@
+Usage of These Classes Together
+
+* WebAppInitializer: This class is responsible for bootstrapping your Spring MVC application by configuring the DispatcherServlet,
+  which is the core servlet that handles all incoming requests. It loads the root configuration (WebRootConfig)
+  and web configuration (WebAppConfig).
+
+* WebAppConfig: This is where your web-related configuration is handled. It enables Spring MVC via @EnableWebMvc
+  and scans your packages for annotated components like controllers (HelloWebMVC).
+
+* HelloWebMVC: This is your REST controller, which handles the actual incoming HTTP requests
+  (mapped by @RequestMapping, @GetMapping, etc.). When a request hits /hello/*, Spring routes it to the appropriate method
+  based on the HTTP method and URL.
+
+* WebRootConfig: This is a placeholder for the root application context.
+  It’s empty now, but in larger applications, it would configure non-web-related beans like services or database connections.
