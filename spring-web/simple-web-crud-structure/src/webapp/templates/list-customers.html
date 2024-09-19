@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer List</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<h2>Customer List</h2>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Actions</th>
+    </tr>
+    <tr th:each="customer : ${customers}">
+        <td th:text="${customer.name}"></td>
+        <td th:text="${customer.email}"></td>
+        <td>
+            <a th:href="@{/customers/update(customerId=${customer.id})}">Update</a>
+            <a th:href="@{/customers/delete(customerId=${customer.id})}">Delete</a>
+        </td>
+    </tr>
+</table>
+<a href="/customers/add">Add New Customer</a>
+</body>
+</html>

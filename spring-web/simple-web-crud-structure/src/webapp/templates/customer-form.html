@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Form</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<h2>Customer Form</h2>
+<form action="/customers/save" method="post">
+    <input type="hidden" name="id" th:value="${customer.id}" />
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" th:value="${customer.name}" />
+    <br />
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" th:value="${customer.email}" />
+    <br />
+    <button type="submit">Save</button>
+</form>
+</body>
+</html>
